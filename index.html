@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css">
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
@@ -32,33 +32,37 @@
     ></script>
   </head>
   <body>
-    <section class="container header-bg">
-      <header class="d-flex">
-        <img src="images/logo.svg" alt="logo" />
-        <button class="btn btn-white">Try It Free</button>
-      </header>
-      <div>
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <button class="btn btn-pink">Get Started For Free</button>
+    <section class="header-bg">
+      <div class="container">
+        <header class="d-flex pt-2">
+          <img src="images/logo.svg" alt="logo" class="logo"/>
+          <button class="btn">Try It Free</button>
+        </header>
+        <div class="pt-3  pl-2 pr-2">
+          <h1>Build The Community<br/>Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice, but
+            so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="btn btn-lg mt-1 mb-3 btn-pink">Get Started For Free</button>
+        </div>
+        <div class="mb-2 ml-2 mr-2 pb-2">
+          <img
+            src="images/illustration-mockups.svg"
+            alt="community illustration"
+            class="img-fluid"
+          />
+        </div>
       </div>
-      <img
-        src="images/illustration-mockups.svg"
-        alt="community illustration"
-        class="img-fluid"
-      />
     </section>
 
-    <section class="container">
+    <section class="container pt-3">
       <div class="card">
         <img
           src="images/illustration-grow-together.svg"
           alt="together illustration"
-          class="img-fluid"
+          class="img-fluid mw-85 mb-2"
         />
         <h3>Grow Together</h3>
         <p>
@@ -72,7 +76,7 @@
         <img
           src="images/illustration-flowing-conversation.svg"
           alt="conversation illustration"
-          class="img-fluid"
+          class="img-fluid mw-85 mb-2"
         />
         <h3>Flowing Conversations</h3>
         <p>
@@ -85,7 +89,7 @@
         <img
           src="images/illustration-your-users.svg"
           alt="users illustration"
-          class="img-fluid"
+          class="img-fluid mw-85 mb-2"
         />
         <h3>Your Users</h3>
         <p>
@@ -95,9 +99,9 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card card-cta">
         <h2>Ready To Build Your Community?</h2>
-        <button class="btn btn-pink">Get Started For Free</button>
+        <button class="btn btn-md btn-pink">Get Started For Free</button>
       </div>
     </section>
 
