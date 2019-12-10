@@ -90,10 +90,6 @@ body {
   flex-direction: column;
 }
 
-.footer__flex > * {
-  border: 1px solid white;
-}
-
 .footer__navlink--1 a,
 .footer__navlink--2 a {
   text-decoration: none;
@@ -105,6 +101,7 @@ body {
 
 .social {
   text-align: center;
+  
 }
 
 .phone,
@@ -265,6 +262,7 @@ body {
 .btn:hover {
   color: #212529;
   text-decoration: none;
+  transform: scale(1.1);
 }
 
 .btn:focus,
@@ -331,6 +329,8 @@ fieldset:disabled a.btn {
 
   .footer__flex {
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
   }
 
   .mp-reset {
@@ -350,6 +350,16 @@ fieldset:disabled a.btn {
   .card .btn {
     font-size: 1rem;
   }
+
+  .footer__info {
+    max-width: 40%;
+  }
+
+  .footer__info p {margin-top: 0;}
+
+  .footer__navlink--1 {margin-top: 0 !important;}
+
+  .social i {margin-top: 0;}
 }
 
 @media (min-width: 1200px) {
